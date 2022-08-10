@@ -1,0 +1,42 @@
+2072008
+Nicholas CH
+
+1. add file chooser implementation to save and load file
+2. add save and load 2 using java nio
+3. add error handling for this application
+	- Field kosong (muncul alert)
+	- Ketika user close open / save file (diperiksa menggunakan if)
+	- Ketika user save tanpa extension file (saya tambahkan extension filter)
+	- Ketika load file semua file bisa di open [tidak hanya .txt] (saya tambahkan extension filter)
+
+
+4. is it better to save data on plain text or json ? why ?
+	- JSON, karena dengan menggunakan JSON datanya lebih rapi, mudah dibaca dengan mata, JSON juga bisa di convert menjadi array string atau bentuk lainnya. 
+
+5. is there a better format to json to store data on plain text ?
+*  XML or CSV
+
+6. is it better to save data on file instead of a dedicated database ?
+*  menurut saya itu tergantung kebutuhan dari program yang kita buat. Skenario seperti apa dan alur program seperti apa yang client kita inginkan dari penyimpanan data tersebut.
+   ada beberapa kasus dimana ada data yang disimpan pada filenya langsung sekaligus ada data yang disimpan pada database. 
+
+   is there a scenario where saving data on file be better ?
+   Ketika kita hanya ingin membaca data di satu tempat dan tidak dibanyak tempat dengan waktu yang sama. 
+
+
+7. can you test if a specific file exist in a specified path with java ? bisa
+   how ? caranya dengan menggunakan kelas File yang sudah ada pada java. setelah kita gunakan kelas File, maka kita dapat menggunakan fungsi .exists dan .isFile. 
+
+8  can you test if a specific  directory exist in a specified path ? bisa
+   how ? Caranya dengan menggunakan kelas File (sama seperti no 7) lalu kita bisa menggunakan fungsi .exists dan .isDirectory.
+
+9. can you delete or move file using java ? bisa
+   how ? dengan menggunakan kelas Files. Setelah itu kita tinggal menggunakan fungsi .move untuk memindahkan file dan .delete jika kita ingin menghapus file. 
+
+10. can you think of potentiall security problem when you allow java to freely change file on your computer ? 
+    mungkin masalah yang bisa kita dapat ketika ada orang lain yang membuat sebuah malware menggunakan java, lalu
+    malware tersebut bisa merusak program yang kita buat menggunakan java dan menjangkit juga mencuri 
+    data yang kita miliki pada program tersebut.
+    how do we prevent that? untuk cara menanggulanginya tentu saja tidak hanya dengan mengenkripsi file yang
+    program yang kita buat tapi mungkin dengan kita selalu mengupdate jdk java yang kita miliki bisa mengurangi 
+    terjadinya hal-hal yang tidak kita inginkan. Selain itu mungkin saya belum mengetahui cara lain.

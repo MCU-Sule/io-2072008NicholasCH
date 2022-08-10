@@ -1,0 +1,1 @@
+[{"nama":"alek","komen":"Juster itu pinter tapi males"},{"nama":"Kepin","komen":"Alek tidak bodoh hanya saja sedikit malas"}]
